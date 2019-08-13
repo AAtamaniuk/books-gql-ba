@@ -5,16 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "",
+    "start": "nodemon --inspect ./app.js",
     "prettier": "prettier --write *.js",
-    "precommit":"npm run prettier",
+    "precommit": "npm run prettier",
     "prepush": "call npm run lint && call npm run test",
     "commit": "git-cz"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.4.2",
+    "lodash": "^4.17.15"
   },
   "devDependencies": {
     "commitizen": "^4.0.3",
